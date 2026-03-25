@@ -8,14 +8,16 @@
 #include <avr/io.h>
 #include "ports.h"
 #include "leds.h"
+#include "motors.h"
 
 int main(void)
 {
-    /* Replace with your application code */
-    init_ports();
+    motors_init();
+    motor_right(MOTOR_FORWARD,255);
+    motor_left(MOTOR_FORWARD,255);
 	while (1) 
     {
-		led_on_off();
+		
     }
 }
 
