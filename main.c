@@ -1,8 +1,7 @@
 /*
  * line_follower.c
  *
- * Created: 3/3/2026 6:35:07 PM
- * Author : josel
+ 
  */ 
  #include "leds.h"
  #include "motors.h"

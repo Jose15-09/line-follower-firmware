@@ -1,23 +1,23 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "Mac AVR",
             "includePath": [
-                "C:\\WinAVR-20100110\\avr\\include"
+                "/opt/homebrew/Cellar/avr-gcc/**",
+                "/opt/homebrew/Cellar/avr-libc/**",
+                "${workspaceFolder}/**"
             ],
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+                "F_CPU=16000000UL"
             ],
-            "compilerPath": "C:\\WinAVR-20100110\\bin\\avr-gcc.exe",
+            "compilerPath": "/opt/homebrew/bin/avr-gcc",
             "cStandard": "gnu99",
             "cppStandard": "gnu++11",
-            "intelliSenseMode": "windows-gcc-x64",
+            "intelliSenseMode": "gcc-x64",
             "compilerArgs": [
-                "-mmcu=atmega328p",     // Will ensure MCU defines are set correctly
-                "-DF_CPU=16000000UL",   // Will ensure F_CPU is set correctly
-                "-Os"                   // Will avoid optimization warnings re: _delay functions
+                "-mmcu=atmega328p",
+                "-DF_CPU=16000000UL",
+                "-Os"
             ]
         }
     ],
